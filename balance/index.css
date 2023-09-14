@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.html {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #ffffff;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.header_box {
+  display: inherit;
+  flex: 1;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.avatar_box {
+  display: inherit;
+  flex: 1;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.avatar_holder {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.greeting_box {
+  display: flex;
+  flex-direction: column;
+}
+
+.greeting_box > span:first-child {
+  font-size: 16px;
+  color: #808080;
+}
+
+.greeting_box > span:last-child {
+  font-weight: bold;
+}
+
+.icon_box {
+  display: inherit;
+  column-gap: 16px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon_box i {
+  font-size: 20px;
+  color: #808080;
+}
+
+.balance_box {
+  display: inherit;
+  flex-direction: column;
+  padding: 10px 20px;
+  row-gap: 8px;
+}
+
+.balance_box > span:first-child {
+  font-size: 1.4em;
+  color: #808080;
+}
+
+.balance_box > span:last-child {
+  font-size: 4em;
+}
+
+.action_box {
+  display: inherit;
+  flex: 1;
+  flex-direction: row;
+  padding: 20px 10px;
+  column-gap: 12px;
+  height: 50px;
+  justify-content: center;
+}
+
+.button {
+  display: inherit;
+  width: 35%;
+  height: 22px;
+  padding: 20px 0;
+  border: 1px solid #808080;
+  border-radius: 35px;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.button span {
+  font-size: 20px;
+  color: #808080;
+}
+
+.button span i {
+  font-size: 22px;
+  color: #000000;
+}
+
+.rounded {
+  border: 1px solid #808080;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.more_box {
+  display: flex;
+  column-gap: 4px;
+}
+
+.bars {
+  width: 5px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #000000;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*card section*/
+.cards {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.card1,
+.card2 {
+  width: 30%; /* Adjust the width to make them narrower */
+  border: none;
+  border-radius: 15px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-left: 30px;
+}
+.card2 .side1 {
+  background-color: rgb(144, 238, 144);
+}
+
+.side1,
+.side2 {
+  background-color: skyblue;
+  width: 100%;
+  height: 200px;
+}
+.side2 {
+  background-color: #f1f1f1;
+}
+
+.card1,
+.card2 {
+  justify-content: center;
+  align-items: center;
+}
+.fas {
+  padding-bottom: 50px;
+  padding-left: -50px;
+}
+.number {
+  text-align: center;
+  padding-top: 20px;
+  word-spacing: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 70px;
+}
+.side2 {
+  display: flex;
+  padding-top: 60px;
+  height: 20px;
+  padding-bottom: 40px;
+}
+.name {
+  padding-left: 30px;
+}
+.date {
+  font-weight: bolder;
+}
+.visa {
+  padding-left: 100px;
+  font-size: 20px;
+  font-weight: bolder;;/
+}
+/*bottom styling*/
+.image {
+  margin-left: -60px;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+}
+.button2 .button {
+display: flex;
+  /* This will remove the space between buttons */
+}
+
+.button-back {
+width: 40%;
+}
