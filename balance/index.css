@@ -4,8 +4,11 @@
   font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .html {
   box-sizing: border-box;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .container {
@@ -145,86 +148,172 @@
   justify-content: center;
   align-items: center;
 }
-/*card section*/
-.cards {
-  display: flex;
-  flex-direction: row;
-  column-gap: 30px;
-  justify-content: center;
-}
 
-.card1,
-.card2 {
-  width: 30%; /* Adjust the width to make them narrower */
-  border: none;
-  border-radius: 15px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
+/* physical card styling */
+.phys-card {
+  padding: 20px;
+  line-height: 2;
   overflow: hidden;
-  margin-left: 30px;
 }
-.card2 .side1 {
-  background-color: rgb(144, 238, 144);
+.phys-card .flex-card {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
-
+.fa-wifi {
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+.side1 {
+  background: #c1cfe6;
+}
 .side1,
 .side2 {
-  background-color: skyblue;
-  width: 100%;
-  height: 200px;
+  padding: 30px 30px 15px 30px;
+}
+.card1 {
+  min-width: 400px;
+  margin-top: 20px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .side2 {
-  background-color: #f1f1f1;
+  background: #f8f2f7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-card .card-1 {
+  background-color: #c3e2c0;
+}
+.side2 .name .date {
+  font-weight: 600;
+}
+.number,
+.visa {
+  font-size: 35px;
 }
 
-.card1,
-.card2 {
+.visa {
+  font-weight: 900;
+}
+
+/* End of Physical cars styling */
+
+/*bottom styling*/
+.under {
+  position: absolute;
+  top: 180px;
+  z-index: -10;
+  padding: 180px 30px 50px 65px;
+  width: auto;
+  background: black;
+  color: white;
+}
+
+.under h4 {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.under .items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+}
+
+.out-circle {
+  border: 2px solid reds;
+  background: #151316;
+  width: 40px;
+  display: grid;
   justify-content: center;
   align-items: center;
-}
-.fas {
-  padding-bottom: 50px;
-  padding-left: -50px;
-}
-.number {
-  text-align: center;
-  padding-top: 20px;
-  word-spacing: 15px;
-  font-size: 20px;
-  font-weight: 600;
-  padding-right: 70px;
-}
-.side2 {
-  display: flex;
-  padding-top: 60px;
-  height: 20px;
-  padding-bottom: 40px;
-}
-.name {
-  padding-left: 30px;
-}
-.date {
-  font-weight: bolder;
-}
-.visa {
-  padding-left: 100px;
-  font-size: 20px;
-  font-weight: bolder;;/
-}
-/*bottom styling*/
-.image {
-  margin-left: -60px;
-}
-.items {
-  display: flex;
-  flex-direction: column;
-}
-.button2 .button {
-display: flex;
-  /* This will remove the space between buttons */
+  height: 40px;
+  padding: 10px;
+  border-radius: 100px;
 }
 
-.button-back {
-width: 40%;
+.in-circle {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(173, 168, 168);
+  border-radius: 200px;
+}
+
+.under .user .outter-cir {
+  border: 2px solid rgb(233, 233, 227);
+  width: 200px;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.imgTag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imgTag img {
+  border: 2px solid rgb(211, 211, 204);
+  width: 30px;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.wrapper {
+  position: relative;
+}
+.wrapper .horizontal {
+  margin-top: 20px;
+  padding: 0;
+  position: static;
+}
+footer h4 {
+  margin-bottom: 20px;
+}
+.slide {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.no {
+  font-size: 20px;
+}
+.text {
+  font-size: 10px;
+  color: rgba(107, 107, 107, 0.5);
+}
+select {
+  background-color: rgba(107, 107, 107, 0.5);
+  padding: 6px;
+  border: none;
+  border-radius: 20px;
+}
+
+@media (max-width: 767px) {
+  .under {
+    position: absolute;
+    top: auto;
+    padding: 20px 10px;
+    overflow: scroll;
+  }
+  .under h4 {
+    font-size: 20px;
+  }
+}
+.phys-card .flex-card {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.side1,
+.side2 {
+  padding: 10px 10px 15px 10px;
+}
+.wrapper {
+  position: relative;
 }
