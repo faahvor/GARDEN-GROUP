@@ -150,6 +150,7 @@
 }
 
 /* physical card styling */
+/* physical card styling */
 .phys-card {
   padding: 20px;
   line-height: 2;
@@ -173,9 +174,9 @@
 }
 .card1 {
   min-width: 400px;
-  margin-top: 20px;
   border-radius: 20px;
   overflow: hidden;
+  margin-top: 20px;
 }
 .side2 {
   background: #f8f2f7;
@@ -198,6 +199,76 @@
   font-weight: 900;
 }
 
+/* End of Physical cars styling */
+
+/*bottom styling*/
+.under {
+  position: absolute;
+  top: 180px;
+  z-index: -10;
+  padding: 180px 30px 50px 65px;
+  width: auto;
+  background: black;
+  color: white;
+}
+
+.under h4 {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.under .items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+}
+
+.out-circle {
+  border: 2px solid reds;
+  background: #151316;
+  width: 40px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.in-circle {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(173, 168, 168);
+  border-radius: 200px;
+}
+
+.under .user .outter-cir {
+  border: 2px solid rgb(233, 233, 227);
+  width: 200px;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.imgTag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imgTag img {
+  border: 2px solid rgb(211, 211, 204);
+  width: 30px;
+  border-radius: 100px;
+  padding: 5px;
+}
+
+.wrapper {
+  position: relative;
+}
 /* End of Physical cars styling */
 
 /*bottom styling*/
